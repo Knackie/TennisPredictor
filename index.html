@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tennis Predictor</h1>
+    <form id="predictForm">
+        <label>Player 1 Name: <input type="text" id="player1" required /></label><br>
+        <label>Player 2 Name: <input type="text" id="player2" required /></label><br>
+        <label>Surface: 
+            <select id="surface" required>
+                <option value="clay">Clay</option>
+                <option value="grass">Grass</option>
+                <option value="hard">Hard</option>
+            </select>
+        </label><br>
+        <button type="submit">Predict</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
